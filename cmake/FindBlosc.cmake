@@ -1,7 +1,7 @@
 # FindBlosc
 # =========
 #
-# Locate the Blosc.
+# Locate Blosc.
 #
 # Imported targets
 # ----------------
@@ -29,14 +29,14 @@
 # The following cache variables may also be set:
 #
 # `BLOSC_ROOT`
-#  The root directory of the Google Test installation (may also be
+#  The root directory of the Blosc installation (may also be
 #  set as an environment variable)
 #
 # Example usage
 # -------------
 #
 # ```
-# find_package(Blosc REQUIRED)
+# find_package(Blosc)
 #
 # add_executable(foo foo.cc)
 # target_link_libraries(foo Blosc::Blosc)
@@ -85,7 +85,6 @@ else()
         BUILD_COMMAND     ${CMAKE_COMMAND} --build .
         TEST_COMMAND      ""
         UPDATE_COMMAND    ""
-        EXCLUDE_FROM_ALL  TRUE
         )
 
     ExternalProject_Get_Property(blosc INSTALL_DIR)
